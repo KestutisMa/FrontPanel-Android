@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity$CountersFragment">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border" android:layout_margin="10dp" android:padding="5dp"
+            android:id="@+id/constraintLayoutCounter1" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+                android:text="Counter #1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCounter1"
+                android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="6dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"/>
+
+        <Button
+                android:text="Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCounter1Reset" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCounter1"
+                tools:ignore="HardcodedText"/>
+        <Button
+                android:text="Disable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCounter1Disable"
+                app:layout_constraintStart_toEndOf="@+id/buttonCounter1Reset"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textViewCounter1"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 7"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/imageViewLedBit7" android:layout_marginStart="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCounter1Reset"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit7"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit7"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit7"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 6"
+                android:id="@+id/imageViewLedBit6"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit7"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit7"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit6"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit6"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit6"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 5"
+                android:id="@+id/imageViewLedBit5"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit6"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit6"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit5"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit5"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit5"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 4"
+                android:id="@+id/imageViewLedBit4"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit5"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit5"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit4"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit4"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit4"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 3"
+                android:id="@+id/imageViewLedBit3"
+                app:srcCompat="@drawable/led_on"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit4"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit4"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit3"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit3"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit3"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 2"
+                android:id="@+id/imageViewLedBit2"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit3"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit3"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit2"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit2"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 1"
+                android:id="@+id/imageViewLedBit1"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit2"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit1"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit1"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit1"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <ImageView
+                android:contentDescription="Led bit 0"
+                android:id="@+id/imageViewLedBit0"
+                app:srcCompat="@drawable/led_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/led_space"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLedBit1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewLedBit1"
+                tools:ignore="HardcodedText"/>
+        <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLedBit0"
+                app:layout_constraintStart_toStartOf="@+id/imageViewLedBit0"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewLedBit0"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginTop="4dp"
+                tools:ignore="HardcodedText"/>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingBottom="8dp" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:id="@+id/constraintLayout1HighNibble"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout1LowNibble"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp">
+
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCounter1HighNibble"
+                    android:textSize="40sp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNibble"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:text="x[7:4]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCounter1HighNibble"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCounter1HighNibble"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCounter1HighNibble"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    tools:ignore="HardcodedText"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:background="@drawable/border"
+                android:paddingBottom="8dp" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:id="@+id/constraintLayout1LowNibble" android:layout_marginBottom="8dp">
+
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCounter1LowNibble"
+                    android:textSize="40sp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNibble"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:text="x[3:0]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCounter1LowNibble"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCounter1LowNibble"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCounter1LowNibble"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    tools:ignore="HardcodedText"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border" android:layout_margin="10dp" android:padding="5dp"
+            android:id="@+id/constraintLayoutCounter2" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutCounter1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+        <TextView
+                android:text="Counter #2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCounter2"
+                android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="6dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"/>
+
+        <Button
+                android:text="- Reset -"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCounter2Reset" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCounter2"
+                tools:ignore="HardcodedText"/>
+        <CheckBox
+                android:text="Autocount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="109dp"
+                android:id="@+id/checkboxCounter2Autocount"
+                app:layout_constraintStart_toStartOf="@+id/buttonCounter2Reset"
+                app:layout_constraintTop_toTopOf="@+id/buttonCounter2Down"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonCounter2Down"
+                app:layout_constraintHorizontal_bias="0.5"
+                tools:ignore="HardcodedText"/>
+
+        <Button
+                android:text="- Up -"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCounter2Up"
+                app:layout_constraintStart_toEndOf="@+id/checkboxCounter2Autocount"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textViewCounter2"
+                tools:ignore="HardcodedText"/>
+        <Button
+                android:text="- Down -"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCounter2Down"
+                app:layout_constraintStart_toStartOf="@+id/buttonCounter2Up"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/buttonCounter2Up"
+                tools:ignore="HardcodedText"/>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:paddingBottom="8dp" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:id="@+id/constraintLayout2HighNibble"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout2LowNibble"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp">
+
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCounter2HighNibble"
+                    android:textSize="40sp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNibble"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:text="x[7:4]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCounter2HighNibble"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCounter2HighNibble"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCounter2HighNibble"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    tools:ignore="HardcodedText"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:background="@drawable/border"
+                android:paddingBottom="8dp" android:paddingLeft="8dp" android:paddingRight="8dp"
+                android:id="@+id/constraintLayout2LowNibble" android:layout_marginBottom="8dp">
+
+            <TextView
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCounter2LowNibble"
+                    android:textSize="40sp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNibble"
+                    tools:ignore="HardcodedText"/>
+            <TextView
+                    android:text="x[3:0]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCounter2LowNibble"
+                    app:layout_constraintStart_toStartOf="@+id/textViewCounter2LowNibble"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewCounter2LowNibble"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    tools:ignore="HardcodedText"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
